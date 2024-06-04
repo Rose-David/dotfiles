@@ -109,7 +109,7 @@
     fira-code-nerdfont kde-gruvbox protonvpn-gui
 
     # music:
-    ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2
+    ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm
     # moar plugin packs:
     # distrho lsp-plugins
 
