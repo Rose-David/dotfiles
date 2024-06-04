@@ -158,7 +158,10 @@
     shellAliases = { ls = "lsd -a"; };
   };
   users.users.davidr.shell = pkgs.fish;
-  programs.starship.enable = true;
+  programs.starship = {
+    enable = true;
+    presets = [ "gruvbox-rainbow" ];
+  };
   programs.thefuck.enable = true;
 
   programs.neovim = {
