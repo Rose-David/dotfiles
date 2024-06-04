@@ -159,6 +159,7 @@
   };
   users.users.davidr.shell = pkgs.fish;
   programs.starship.enable = true;
+  programs.thefuck.enable = true;
 
   programs.neovim = {
     enable = true;
