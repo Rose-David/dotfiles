@@ -160,13 +160,12 @@
   users.users.davidr.shell = pkgs.fish;
   programs.starship.enable = true;
 
-  /*programs.neovim = {
+  programs.neovim = {
     enable = true;
     defaultEditor = true;
     vimAlias = true;
     viAlias = true;
   };
-  */
 
   programs.kdeconnect.enable = true;
 
