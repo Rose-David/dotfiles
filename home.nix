@@ -33,6 +33,11 @@
         plugin = gruvbox-nvim;
 	config = "colorscheme gruvbox";
       }
+
+      lualine-nvim
+      
+      luasnip
+      friendly-snippets
     ];
   };
 }
