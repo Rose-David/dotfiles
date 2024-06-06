@@ -23,6 +23,13 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    extraPackages = with pkgs; [
+      lua-language-server
+      
+      xclip
+      wl-clipboard
+    ];
+
     plugins = with pkgs.vimPlugins; [
       {
         plugin = mason-nvim;
@@ -34,10 +41,48 @@
 	config = "colorscheme gruvbox";
       }
 
-      lualine-nvim
+      {
+        plugin = nvim-lspconfig;
+	config = toLuaFile ./nvim/plugin/lsp.lua;
+      }
       
+      {
+        plugin = nvim-cmp;
+	config = toLuaFile ./nvim/plugin/cmp.lua;
+      }
+
+      {
+        plugin = telescope-nvim;
+	config = toLuaFile ./nvim/plugin/telescope.lua;
+      }
+      telescope-fzf-native-nvim
+
+      lualine-nvim
+      nvim-web-devicons
+
       luasnip
       friendly-snippets
+
+      cmp_luasnip
+      cmp-nvim-lsp
+
+      neodev-nvim
+
+      {
+        plugin = (nvim-treesitter.withPlugins (p: [
+	  p.tree-sitter-nix
+          p.tree-sitter-vim
+          p.tree-sitter-bash
+          p.tree-sitter-lua
+          p.tree-sitter-python
+          p.tree-sitter-json
+	]));
+	config = toLuaFile ./nvim/plugin/treesitter.lua;
+      }
     ];
+
+    extraLuaConfig = ''
+      ${builtins.readFile ./nvim/options.lua}
+    '';
   };
 }
