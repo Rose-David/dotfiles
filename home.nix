@@ -55,9 +55,14 @@
         plugin = telescope-nvim;
 	config = toLuaFile ./nvim/plugin/telescope.lua;
       }
+      
       telescope-fzf-native-nvim
 
-      lualine-nvim
+      {
+        plugin = lualine-nvim;
+	config = toLua "require('lualine').setup()";
+      }
+
       nvim-web-devicons
 
       luasnip
