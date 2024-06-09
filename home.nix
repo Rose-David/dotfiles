@@ -25,17 +25,13 @@
 
     extraPackages = with pkgs; [
       lua-language-server
-      
+      lua53Packages.lua-lsp
+
       xclip
       wl-clipboard
     ];
 
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = mason-nvim;
-	config = toLua "require('mason').setup()";
-      }
-      
       {
         plugin = gruvbox-nvim;
 	config = "colorscheme gruvbox";
@@ -64,14 +60,16 @@
       }
 
       nvim-web-devicons
+      
+      cmp_luasnip
+      cmp-nvim-lsp
 
       luasnip
       friendly-snippets
 
-      cmp_luasnip
-      cmp-nvim-lsp
-
       neodev-nvim
+      
+      vimtex
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
