@@ -117,7 +117,8 @@
     space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull
 
     # gamedev:
-    godot_4 aseprite
+    godot_4 aseprite 
+    # trenchbroom
 
     # drone stuff:
     betaflight-configurator inav-configurator
