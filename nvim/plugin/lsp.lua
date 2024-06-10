@@ -48,3 +48,11 @@ require('lspconfig').rnix.setup {
     capabilities = capabilities,
 }
 --]]
+
+require('lspconfig').rust_analyzer.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	root_dir = function()
+		return vim.loop.cwd()
+	end	
+}
