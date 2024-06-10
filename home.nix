@@ -79,6 +79,7 @@
           p.tree-sitter-lua
           p.tree-sitter-python
           p.tree-sitter-json
+	  # LaTeX is covered by VimTeX
 	]));
 	config = toLuaFile ./nvim/plugin/treesitter.lua;
       }
