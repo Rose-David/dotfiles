@@ -120,6 +120,9 @@
     godot_4 aseprite 
     # trenchbroom
 
+    # programming:
+    cargo rustc
+
     # drone stuff:
     betaflight-configurator inav-configurator
 

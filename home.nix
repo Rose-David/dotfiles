@@ -27,6 +27,8 @@
       lua-language-server
       lua53Packages.lua-lsp
 
+      rust-analyzer
+
       xclip
       wl-clipboard
     ];
@@ -71,6 +73,8 @@
       
       vimtex
 
+      rust-tools-nvim
+
       {
         plugin = (nvim-treesitter.withPlugins (p: [
 	  p.tree-sitter-nix
@@ -79,6 +83,7 @@
           p.tree-sitter-lua
           p.tree-sitter-python
           p.tree-sitter-json
+	  p.tree-sitter-rust
 	  # LaTeX is covered by VimTeX
 	]));
 	config = toLuaFile ./nvim/plugin/treesitter.lua;
