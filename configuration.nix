@@ -133,7 +133,7 @@
     pika-backup warp
 
     # KDE Packages:
-    kdePackages.partitionmanager kdePackages.kalk
+    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons
 
     # libraries:
     spacenavd
