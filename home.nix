@@ -31,6 +31,8 @@
 
       xclip
       wl-clipboard
+
+      ripgrep
     ];
 
     plugins = with pkgs.vimPlugins; [
