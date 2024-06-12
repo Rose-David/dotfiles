@@ -109,7 +109,7 @@
     fira-code-nerdfont kde-gruvbox protonvpn-gui
 
     # music:
-    ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm
+    ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm lmms
     # moar plugin packs:
     # distrho lsp-plugins
 
@@ -133,7 +133,7 @@
     pika-backup warp
 
     # KDE Packages:
-    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons
+    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons libsForQt5.kwidgetsaddons
 
     # libraries:
     spacenavd
