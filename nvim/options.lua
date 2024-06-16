@@ -1,4 +1,3 @@
---idk why this dont work
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
