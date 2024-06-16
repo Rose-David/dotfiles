@@ -139,7 +139,7 @@
     spacenavd
 
     # pain:
-    ungoogled-chromium
+    chromium
   ];
 
   # Install firefox.
