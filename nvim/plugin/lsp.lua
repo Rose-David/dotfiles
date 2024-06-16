@@ -49,6 +49,7 @@ require('lspconfig').rnix.setup {
 }
 --]]
 
+-- I hope this works
 require('lspconfig').rust_analyzer.setup{
 	settings = {
 		['rust-analyzer'] = {
