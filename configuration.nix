@@ -13,6 +13,9 @@
   # Enable flakes:
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable dynamic linking:
+  programs.nix-ld.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -187,6 +190,8 @@
   };
 
   programs.adb.enable = true;
+
+  programs.appimage.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
