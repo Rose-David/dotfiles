@@ -106,7 +106,7 @@
     wget curl hyfetch btop blahaj lsd sl tldr
 
     # productivity:
-    obsidian blanket anki-bin prusa-slicer vscode texliveMedium
+    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3
     
     # customization:
     fira-code-nerdfont kde-gruvbox protonvpn-gui
