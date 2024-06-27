@@ -162,7 +162,7 @@
   programs.fish = {
     enable = true;
     useBabelfish = true;
-    shellAliases = { ls = "lsd -a"; };
+    shellAliases = { ls = "lsd -a"; hyfetch = "hyfetch -b fastfetch"; };
   };
   users.users.davidr.shell = pkgs.fish;
   programs.starship = {
