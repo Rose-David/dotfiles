@@ -124,7 +124,7 @@
     # trenchbroom
 
     # programming:
-    cargo rustc gcc
+    cargo rustc gcc gdb
 
     # drone stuff:
     betaflight-configurator inav-configurator
