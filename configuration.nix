@@ -113,11 +113,12 @@
 
     # music:
     ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm lmms
+    spotify spicetify-cli
     # moar plugin packs:
     # distrho lsp-plugins
 
     # gaming:
-    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull
+    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull vesktop
 
     # gamedev:
     godot_4 aseprite 
