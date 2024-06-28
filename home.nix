@@ -36,6 +36,7 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
+      # beaufityl
       {
         plugin = gruvbox-nvim;
 	config = "colorscheme gruvbox";
