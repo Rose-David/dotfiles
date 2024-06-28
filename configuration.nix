@@ -130,7 +130,7 @@
     betaflight-configurator inav-configurator
 
     # misc creative:
-    gimp libreoffice krita inkscape obs-studio blender-hip freecad
+    gimp libreoffice krita inkscape obs-studio blender-hip freecad wineWowPackages.wayland
 
     # files:
     pika-backup warp
