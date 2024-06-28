@@ -113,7 +113,7 @@
 
     # music:
     ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm lmms
-    spotify spicetify-cli
+    spotify
     # moar plugin packs:
     # distrho lsp-plugins
 
