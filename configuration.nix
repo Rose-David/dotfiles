@@ -118,7 +118,7 @@
     # distrho lsp-plugins
 
     # gaming:
-    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull vesktop
+    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull vesktop osu-lazer-bin
 
     # gamedev:
     godot_4 aseprite 
