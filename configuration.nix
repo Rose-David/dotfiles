@@ -30,6 +30,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  services.avahi = {
+    enable = true;
+    openFirewall = true;
+    nssmdns4 = true;
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";
