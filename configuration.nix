@@ -106,7 +106,7 @@
     wget curl hyfetch fastfetch btop blahaj lsd sl tldr
 
     # productivity:
-    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3
+    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3 rpi-imager
     
     # customization:
     fira-code-nerdfont kde-gruvbox protonvpn-gui
@@ -137,7 +137,7 @@
     pika-backup warp
 
     # KDE Packages:
-    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons kdePackages.isoimagewriter
+    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons
 
     # libraries:
     spacenavd
