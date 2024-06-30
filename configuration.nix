@@ -13,6 +13,8 @@
   # Enable flakes:
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  home-manager.backupFileExtension = "backup";
+
   # Enable dynamic linking:
   programs.nix-ld.enable = true;
 
