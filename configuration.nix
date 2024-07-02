@@ -110,7 +110,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # terminal:
-    wget curl hyfetch fastfetch btop blahaj lsd sl tldr
+    wget curl hyfetch fastfetch btop blahaj lsd sl tldr openssh
 
     # productivity:
     obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3 rpi-imager nmap
