@@ -147,7 +147,7 @@
     pika-backup warp
 
     # KDE Packages:
-    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons
+    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons libsForQt5.kdesignerplugin
 
     # libraries:
     spacenavd
