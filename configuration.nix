@@ -113,7 +113,7 @@
     wget curl hyfetch fastfetch btop blahaj lsd sl tldr openssh
 
     # productivity:
-    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3 rpi-imager nmap
+    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3 rpi-imager nmap zoom-us
     
     # customization:
     fira-code-nerdfont kde-gruvbox protonvpn-gui
