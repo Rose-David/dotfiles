@@ -125,7 +125,7 @@
     # distrho lsp-plugins
 
     # gaming:
-    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull osu-lazer-bin xivlauncher
+    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull osu-lazer-bin xivlauncher nxengine-evo
     (discord.override {
       withVencord = true;
     })
