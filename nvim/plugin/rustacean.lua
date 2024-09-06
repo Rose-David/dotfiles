@@ -29,20 +29,6 @@ vim.g.rustaceanvim = {
       vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
         vim.lsp.buf.format()
       end, {})
-      
-      bufmap('n', "<Leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Debugger step into" }) 
-      bufmap('n', "<Leader>dov", "<cmd>lua require('dap').step_over()<CR>", { desc = "Debugger step over" }) 
-      bufmap('n', "<Leader>dou", "<cmd>lua require('dap').step_out()<CR>", { desc = "Debugger step out" })
-      bufmap('n', "<Leader>dc", function()
-              require('dap').continue()
-      end, { desc = "Debugger continue" })
-      bufmap('n', "<Leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>", { desc = "Debugger toggle breakpoint" })
-      bufmap('n', "<Leader>dd", "<cmd>lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", { desc = "Debugger set conditional breakpoint" })
-      bufmap('n', "<Leader>de", "<cmd>lua require('dap').terminate()<CR>", { desc = "Debugger reset" })
-      bufmap('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last" })
-      -- rustaceanvim
-      bufmap('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
-
     end,
     default_settings = {
       -- rust-analyzer language server configuration
