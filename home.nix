@@ -73,6 +73,7 @@
 
       vim-fugitive
 
+      rustaceanvim
       {
         plugin = nvim-dap;
 	config = toLuaFile ./nvim/plugin/nvim-dap.lua;
@@ -93,8 +94,6 @@
       neodev-nvim
       
       vimtex
-
-      rustaceanvim
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
