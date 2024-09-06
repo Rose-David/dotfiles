@@ -71,6 +71,8 @@
 
       vim-fugitive
 
+      nvim-dap
+
       nvim-web-devicons
       
       cmp_luasnip
