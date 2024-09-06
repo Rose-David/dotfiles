@@ -49,7 +49,6 @@ require('lspconfig').rnix.setup {
 }
 --]]
 
--- I hope this works
 require('lspconfig').rust_analyzer.setup{
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -59,6 +58,22 @@ require('lspconfig').rust_analyzer.setup{
 	    cmd = { "rust-analyzer" },
 	settings = {
 		['rust-analyzer'] = {
+			diagnostics = {
+				enable = false;
+			}
+		}
+	}
+}
+
+require('lspconfig').clangd.setup{
+	on_attach = on_attach,
+	capabilities = capabilities,
+	    root_dir = function()
+	    return vim.loop.cwd()
+	end,
+	    cmd = { "clangd" },
+	settings = {
+		['clangd'] = {
 			diagnostics = {
 				enable = false;
 			}
