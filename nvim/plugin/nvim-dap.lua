@@ -50,8 +50,8 @@ dap.configurations.cpp = {
     -- runInTerminal = false,
   },
 }
-dap.configurations.cpp = dap.configurations.c
-dap.configurations.rust
+dap.configurations.c = dap.configurations.cpp
+dap.configurations.rust = dap.configurations.cpp
 
 -- keybinds setup
 local on_attach = function(_, bufnr)
