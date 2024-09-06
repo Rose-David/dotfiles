@@ -64,6 +64,11 @@
 	config = toLua "require('lualine').setup()";
       }
 
+      {
+        plugin = gitsigns-nvim;
+	config = toLua "require('gitsigns').setup()";
+      }
+
       nvim-web-devicons
       
       cmp_luasnip
