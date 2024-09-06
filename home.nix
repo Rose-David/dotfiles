@@ -29,6 +29,8 @@
 
       rust-analyzer
 
+      lldb
+
       xclip
       wl-clipboard
 
@@ -85,7 +87,7 @@
       
       vimtex
 
-      rust-tools-nvim
+      rustaceanvim
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
