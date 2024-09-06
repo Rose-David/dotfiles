@@ -29,8 +29,6 @@
 
       rust-analyzer
 
-      ccls
-
       xclip
       wl-clipboard
 
