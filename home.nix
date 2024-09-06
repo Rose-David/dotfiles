@@ -73,7 +73,10 @@
 
       vim-fugitive
 
-      rustaceanvim
+      {
+        plugin = rustaceanvim;
+	config = toLuaFile ./nvim/plugin/rustacean.lua;
+      }
       {
         plugin = nvim-dap;
 	config = toLuaFile ./nvim/plugin/nvim-dap.lua;
