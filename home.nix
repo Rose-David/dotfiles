@@ -69,6 +69,8 @@
 	config = toLuaFile ./nvim/plugin/gitsigns.lua;
       }
 
+      vim-fugitive
+
       nvim-web-devicons
       
       cmp_luasnip
