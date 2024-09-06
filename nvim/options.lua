@@ -2,6 +2,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- DAP keybinds
 vim.keymap.set('n', "<Leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Debugger step into" }) 
 vim.keymap.set('n', "<Leader>dov", "<cmd>lua require('dap').step_over()<CR>", { desc = "Debugger step over" }) 
 vim.keymap.set('n', "<Leader>dou", "<cmd>lua require('dap').step_out()<CR>", { desc = "Debugger step out" })
@@ -12,6 +13,12 @@ vim.keymap.set('n', "<Leader>de", "<cmd>lua require('dap').terminate()<CR>", { d
 vim.keymap.set('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last" })
 -- rustaceanvim
 vim.keymap.set('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
+-- Telescope
+local builtin = require("telescope.builtin")
+vim.keymap.set('n', "<leader>ff", builtin.find_files()
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.o.clipboard = 'unnamedplus'
 
