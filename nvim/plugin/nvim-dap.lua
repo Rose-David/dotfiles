@@ -17,6 +17,11 @@ dap.listeners.before.event_exited.dapui_config = function()
 	dapui.close()
 end
 
+dap.adapters.gdb = {
+	type = "executable",
+	command = "gdb",
+	args = { "--interpreter=dap", "--eval-command", "set print pretty on" }
+}
 
 -- keybinds setup
 local on_attach = function(_, bufnr)
@@ -33,3 +38,4 @@ local on_attach = function(_, bufnr)
 	-- rustaceanvim
 	map('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables", buffer = bufnr  })
 end
+
