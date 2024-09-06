@@ -19,7 +19,7 @@ local on_attach = function(_, bufnr)
   bufmap('K', vim.lsp.buf.hover)
 
 -- keybinds setup
-  
+--[[  
   local map = vim.keymap.set
 
   map('n', "<Leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Debugger step into", buffer = bufnr }) 
@@ -32,7 +32,7 @@ local on_attach = function(_, bufnr)
   map('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last", buffer = bufnr  })
           -- rustaceanvim
   map('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables", buffer = bufnr  })
-
+--]]
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
   end, {})
