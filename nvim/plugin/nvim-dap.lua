@@ -1,4 +1,3 @@
-function()
 	-- dapui setup
 	local dap, dapui = require("dap"), require("dapui")
 	
@@ -32,5 +31,3 @@ function()
 	map('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last" })
 	-- rustaceanvim
 	map('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
-
-end
