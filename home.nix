@@ -29,7 +29,7 @@
 
       rust-analyzer
 
-      vscode-extensions.vadimcn.vscode-lldb.adapter
+      lldb
 
       xclip
       wl-clipboard
