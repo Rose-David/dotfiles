@@ -73,7 +73,14 @@
 
       vim-fugitive
 
-      nvim-dap
+      {
+        plugin = nvim-dap;
+	config = toLuaFile ./nvim/plugin/nvim-dap.lua;
+      }
+      {
+        plugin = nvim-dap-ui;
+	config = toLua "require('dapui').setup()";
+      }
 
       nvim-web-devicons
       
