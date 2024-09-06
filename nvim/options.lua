@@ -2,7 +2,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.keymap.set('n', '<leader>dc', "<cmd>lua require('dap').continue()<CR>", { desc = "Debugger continue" })
+--vim.keymap.set('n', '<leader>dc', "<cmd>lua require('dap').continue()<CR>", { desc = "Debugger continue" })
 
 vim.o.clipboard = 'unnamedplus'
 
