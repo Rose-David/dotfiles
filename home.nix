@@ -66,7 +66,7 @@
 
       {
         plugin = gitsigns-nvim;
-	config = toLua "require('gitsigns').setup()";
+	config = toLuaFile ./nvim/plugin/gitsigns.lua;
       }
 
       nvim-web-devicons
