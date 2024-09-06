@@ -49,6 +49,7 @@ require('lspconfig').rnix.setup {
 }
 --]]
 
+--[[
 require('lspconfig').rust_analyzer.setup{
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -64,6 +65,7 @@ require('lspconfig').rust_analyzer.setup{
 		}
 	}
 }
+--]]
 
 require('lspconfig').clangd.setup{
 	on_attach = on_attach,
