@@ -2,6 +2,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.keymap.set('n', '<leader>dc', "<cmd>lua require('dap').continue()", { desc = "Debugger continue" })
+
 vim.o.clipboard = 'unnamedplus'
 
 vim.o.number = true
