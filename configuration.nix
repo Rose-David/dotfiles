@@ -136,7 +136,7 @@
     # trenchbroom
 
     # programming:
-    cargo rustc gcc gdb libclang python3
+    cargo rustc gcc gdb libclang clang-tools python3
 
     # drone stuff:
     betaflight-configurator inav-configurator
