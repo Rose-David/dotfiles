@@ -1,27 +1,28 @@
-	-- dapui setup
-	local dap, dapui = require("dap"), require("dapui")
-	
-	dap.listeners.before.attach.dapui_config = function()
-		dapui.open()
-	end
+-- dapui setup
+local dap, dapui = require("dap"), require("dapui")
 
-	dap.listeners.before.launch.dapui_config = function()
-		dapui.open()
-	end
+dap.listeners.before.attach.dapui_config = function()
+	dapui.open()
+end
 
-	dap.listeners.before.event_terminated.dapui_config = function()
-		dapui.close()
-	end
+dap.listeners.before.launch.dapui_config = function()
+	dapui.open()
+end
 
-	dap.listeners.before.event_exited.dapui_config = function()
-		dapui.close()
-	end
+dap.listeners.before.event_terminated.dapui_config = function()
+	dapui.close()
+end
+
+dap.listeners.before.event_exited.dapui_config = function()
+	dapui.close()
+end
 
 
-	-- keybinds setup
+-- keybinds setup
+local on_attach = function(_, bufnr)
 	local map = vim.keymap.set
 
-	map('n', "<Leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Debugger step into" }) 
+	map('n', "<Leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Debugger step into", buffer = bufnr }) 
 	map('n', "<Leader>dov", "<cmd>lua require('dap').step_over()<CR>", { desc = "Debugger step over" }) 
 	map('n', "<Leader>dou", "<cmd>lua require('dap').step_out()<CR>", { desc = "Debugger step out" })
 	map('n', "<Leader>dc", "<cmd>lua require('dap').continue()<CR>", { desc = "Debugger continue" })
@@ -31,3 +32,4 @@
 	map('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last" })
 	-- rustaceanvim
 	map('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
+end
