@@ -24,7 +24,7 @@ vim.g.rustaceanvim = {
 
       bufmap('K', vim.lsp.buf.hover)
 
-      bufmap('<Leader>e', vim.cmd.RustLsp('explainError'))
+      bufmap('<Leader>e', "<cmd>RustLsp explainError<CR>")
 
       vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
         vim.lsp.buf.format()
