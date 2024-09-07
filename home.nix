@@ -98,7 +98,7 @@
 
       {
         plugin = barbecue-nvim;
-	config = toLua "require('barbecue').setup()"
+	config = toLua "require('barbecue').setup()";
       }
 
       which-key-nvim
