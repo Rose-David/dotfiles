@@ -13,6 +13,7 @@ vim.keymap.set('n', "<Leader>de", "<cmd>lua require('dap').terminate()<CR>", { d
 vim.keymap.set('n', "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { desc = "Debugger run last" })
 -- rustaceanvim
 vim.keymap.set('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
+vim.keymap.set('n', "<Leader>cr", "<cmd>lua vim.cmd('RustLsp run')<CR>", { desc = "Cargo run" })
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set('n', "<leader>ff", builtin.find_files, {})
