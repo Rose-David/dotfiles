@@ -16,10 +16,10 @@ vim.keymap.set('n', "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", {
 vim.keymap.set('n', "<Leader>cr", "<cmd>lua vim.cmd('RustLsp run')<CR>", { desc = "Cargo run" })
 -- Telescope
 local builtin = require("telescope.builtin")
-vim.keymap.set('n', "<leader>ff", builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', "<leader>ff", builtin.find_files, { desc = "Find Files" })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find Buffers" })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find Help Tags" })
 
 vim.o.clipboard = 'unnamedplus'
 

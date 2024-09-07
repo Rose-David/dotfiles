@@ -100,8 +100,10 @@
         plugin = barbecue-nvim;
 	config = toLua "require('barbecue').setup()";
       }
-
-      which-key-nvim
+      {
+        plugin = which-key-nvim;
+	config = toLuaFile ./nvim/plugin/which-key.lua;
+      }
 
       luasnip
       friendly-snippets
