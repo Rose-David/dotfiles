@@ -91,6 +91,18 @@
       cmp_luasnip
       cmp-nvim-lsp
 
+      {
+        plugin = fidget-nvim;
+	config = toLua "require('fidget').setup()";
+      }
+
+      {
+        plugin = barbecue-nvim;
+	config = toLua "require('barbecue').setup()"
+      }
+
+      which-key-nvim
+
       luasnip
       friendly-snippets
 
