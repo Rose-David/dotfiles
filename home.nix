@@ -31,6 +31,11 @@
 
       lldb
 
+      stylua
+      rustfmt
+      nixfmt
+      gdtoolkit
+
       xclip
       wl-clipboard
 
@@ -88,6 +93,10 @@
 
       nvim-web-devicons
       
+      {
+        plugin = indent-blankline-nvim;
+	config = toLua "require('ibl').setup()";
+      }
       cmp_luasnip
       cmp-nvim-lsp
 
@@ -107,6 +116,11 @@
 
       luasnip
       friendly-snippets
+
+      {
+        plugin = conform-nvim;
+	config = toLuaFile ./nvim/plugin/conform.lua;
+      }
 
       neodev-nvim
       
