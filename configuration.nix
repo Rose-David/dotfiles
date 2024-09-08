@@ -5,10 +5,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Enable flakes:
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -97,10 +96,11 @@
     isNormalUser = true;
     description = "David Rose";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kate
-    #  thunderbird
-    ];
+    packages = with pkgs;
+      [
+        kate
+        #  thunderbird
+      ];
   };
 
   # Allow unfree packages
@@ -110,45 +110,100 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # terminal:
-    wget curl hyfetch fastfetch btop blahaj lsd sl tldr openssh
+    wget
+    curl
+    hyfetch
+    fastfetch
+    btop
+    blahaj
+    lsd
+    sl
+    tldr
+    openssh
 
     # productivity:
-    obsidian blanket anki-bin prusa-slicer vscode texliveMedium taskwarrior3 rpi-imager nmap zoom-us
-    
+    obsidian
+    blanket
+    anki-bin
+    prusa-slicer
+    vscode
+    texliveMedium
+    taskwarrior3
+    rpi-imager
+    nmap
+    zoom-us
+
     # customization:
-    fira-code-nerdfont kde-gruvbox protonvpn-gui
+    fira-code-nerdfont
+    kde-gruvbox
+    protonvpn-gui
 
     # music:
-    ardour vital tunefish surge-XT sunvox milkytracker odin2 ninjas2 helm lmms
+    ardour
+    vital
+    tunefish
+    surge-XT
+    sunvox
+    milkytracker
+    odin2
+    ninjas2
+    helm
+    lmms
     spotify
     # moar plugin packs:
     # distrho lsp-plugins
 
     # gaming:
-    space-cadet-pinball heroic prismlauncher mangohud protonup-qt sidequest retroarchFull 
-    osu-lazer-bin xivlauncher nxengine-evo ringracers srb2
-    (discord.override {
-      withVencord = true;
-    })
+    space-cadet-pinball
+    heroic
+    prismlauncher
+    mangohud
+    protonup-qt
+    sidequest
+    retroarchFull
+    osu-lazer-bin
+    xivlauncher
+    nxengine-evo
+    ringracers
+    srb2
+    (discord.override { withVencord = true; })
 
     # gamedev:
-    godot_4 aseprite 
+    godot_4
+    aseprite
     # trenchbroom
 
     # programming:
-    cargo rustc gcc gdb clang clang-tools lldb python3
+    cargo
+    rustc
+    gcc
+    gdb
+    clang
+    clang-tools
+    lldb
+    python3
 
     # drone stuff:
-    betaflight-configurator inav-configurator
+    betaflight-configurator
+    inav-configurator
 
     # misc creative:
-    gimp libreoffice krita inkscape obs-studio blender-hip freecad
+    gimp
+    libreoffice
+    krita
+    inkscape
+    obs-studio
+    blender-hip
+    freecad
 
     # files:
-    pika-backup warp
+    pika-backup
+    warp
 
     # KDE Packages:
-    kdePackages.partitionmanager kdePackages.kalk kdePackages.kwidgetsaddons
+    kdePackages.partitionmanager
+    kdePackages.kalk
+    kdePackages.kwidgetsaddons
 
     # libraries:
     spacenavd
@@ -174,7 +229,10 @@
   programs.fish = {
     enable = true;
     useBabelfish = true;
-    shellAliases = { ls = "lsd -a"; hyfetch = "hyfetch -b fastfetch"; };
+    shellAliases = {
+      ls = "lsd -a";
+      hyfetch = "hyfetch -b fastfetch";
+    };
   };
   users.users.davidr.shell = pkgs.fish;
   programs.starship = {
@@ -194,11 +252,7 @@
 
   programs.git = {
     enable = true;
-    config = {
-      init = {
-        defaultBranch = "main";
-      };
-    };
+    config = { init = { defaultBranch = "main"; }; };
   };
 
   programs.adb.enable = true;

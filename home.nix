@@ -11,12 +11,18 @@
   programs.home-manager.enable = true;
 
   # Enable and configure Neovim:
-  programs.neovim = 
-  let
-    toLua = str: "lua << EOF\n${str}\nEOF\n";
-    toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
-  in
-  {
+  programs.neovim = let
+    toLua = str: ''
+      lua << EOF
+      ${str}
+      EOF
+    '';
+    toLuaFile = file: ''
+      lua << EOF
+      ${builtins.readFile file}
+      EOF
+    '';
+  in {
     enable = true;
     defaultEditor = true;
     viAlias = true;
@@ -46,72 +52,72 @@
       # beaufityl
       {
         plugin = gruvbox-nvim;
-	config = "colorscheme gruvbox";
+        config = "colorscheme gruvbox";
       }
 
       {
         plugin = nvim-lspconfig;
-	config = toLuaFile ./nvim/plugin/lsp.lua;
+        config = toLuaFile ./nvim/plugin/lsp.lua;
       }
-      
+
       {
         plugin = nvim-cmp;
-	config = toLuaFile ./nvim/plugin/cmp.lua;
+        config = toLuaFile ./nvim/plugin/cmp.lua;
       }
 
       {
         plugin = telescope-nvim;
-	config = toLuaFile ./nvim/plugin/telescope.lua;
+        config = toLuaFile ./nvim/plugin/telescope.lua;
       }
-      
+
       telescope-fzf-native-nvim
 
       {
         plugin = lualine-nvim;
-	config = toLua "require('lualine').setup()";
+        config = toLua "require('lualine').setup()";
       }
 
       {
         plugin = gitsigns-nvim;
-	config = toLuaFile ./nvim/plugin/gitsigns.lua;
+        config = toLuaFile ./nvim/plugin/gitsigns.lua;
       }
 
       vim-fugitive
 
       {
         plugin = rustaceanvim;
-	config = toLuaFile ./nvim/plugin/rustacean.lua;
+        config = toLuaFile ./nvim/plugin/rustacean.lua;
       }
       {
         plugin = nvim-dap;
-	config = toLuaFile ./nvim/plugin/nvim-dap.lua;
+        config = toLuaFile ./nvim/plugin/nvim-dap.lua;
       }
       {
         plugin = nvim-dap-ui;
-	config = toLua "require('dapui').setup()";
+        config = toLua "require('dapui').setup()";
       }
 
       nvim-web-devicons
-      
+
       {
         plugin = indent-blankline-nvim;
-	config = toLua "require('ibl').setup()";
+        config = toLua "require('ibl').setup()";
       }
       cmp_luasnip
       cmp-nvim-lsp
 
       {
         plugin = fidget-nvim;
-	config = toLua "require('fidget').setup()";
+        config = toLua "require('fidget').setup()";
       }
 
       {
         plugin = barbecue-nvim;
-	config = toLua "require('barbecue').setup()";
+        config = toLua "require('barbecue').setup()";
       }
       {
         plugin = which-key-nvim;
-	config = toLuaFile ./nvim/plugin/which-key.lua;
+        config = toLuaFile ./nvim/plugin/which-key.lua;
       }
 
       luasnip
@@ -119,25 +125,25 @@
 
       {
         plugin = conform-nvim;
-	config = toLuaFile ./nvim/plugin/conform.lua;
+        config = toLuaFile ./nvim/plugin/conform.lua;
       }
 
       neodev-nvim
-      
+
       vimtex
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
-	  p.tree-sitter-nix
+          p.tree-sitter-nix
           p.tree-sitter-vim
           p.tree-sitter-bash
           p.tree-sitter-lua
           p.tree-sitter-python
           p.tree-sitter-json
-	  p.tree-sitter-rust
-	  # LaTeX is covered by VimTeX
-	]));
-	config = toLuaFile ./nvim/plugin/treesitter.lua;
+          p.tree-sitter-rust
+          # LaTeX is covered by VimTeX
+        ]));
+        config = toLuaFile ./nvim/plugin/treesitter.lua;
       }
     ];
 
