@@ -39,7 +39,7 @@
 
       stylua
       rustfmt
-      nixfmt
+      nixfmt-classic
       gdtoolkit_4
 
       xclip
