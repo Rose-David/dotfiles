@@ -42,12 +42,12 @@ require("gitsigns").setup({
 		map("n", "<leader>hb", function()
 			gitsigns.blame_line({ full = true })
 		end, { desc = "Show full blame" })
-		map("n", "<leader>tb", gitsigns.toggle_current_line_blame, { desc = "Toggle Current Line Blame" })
+		map("n", "<leader>htb", gitsigns.toggle_current_line_blame, { desc = "Toggle Current Line Blame" })
 		map("n", "<leader>hd", gitsigns.diffthis, { desc = "Diff Against Current" })
 		map("n", "<leader>hD", function()
 			gitsigns.diffthis("~")
 		end, { desc = "Diff Against Previous" })
-		map("n", "<leader>td", gitsigns.toggle_deleted, { desc = "Toggle Deleted" })
+		map("n", "<leader>htd", gitsigns.toggle_deleted, { desc = "Toggle Deleted" })
 
 		-- Text object
 		map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", { desc = "Select Hunk" })
