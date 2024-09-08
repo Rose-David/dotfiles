@@ -20,6 +20,8 @@ vim.keymap.set('n', "<leader>ff", builtin.find_files, { desc = "Find Files" })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find Buffers" })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find Help Tags" })
+-- Conform
+vim.api.nvim_create_user_command('Format',require("conform").format(), {})
 
 vim.o.clipboard = 'unnamedplus'
 

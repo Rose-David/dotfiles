@@ -19,8 +19,6 @@ local on_attach = function(_, bufnr)
   bufmap('<leader>S', require('telescope.builtin').lsp_dynamic_workspace_symbols, { desc = "Search Dynamic Workspace Symbols" })
 
   bufmap('K', vim.lsp.buf.hover)
-
-  vim.api.nvim_buf_create_user_command(bufnr, 'Format',require("conform").format(), {})
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
