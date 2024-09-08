@@ -11,7 +11,7 @@ local on_attach = function(_, bufnr)
 	bufmap("gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 	bufmap("gD", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
 	bufmap("gI", vim.lsp.buf.implementation, { desc = "Go to Implementation" })
-	bufmap("<leader>D", vim.lsp.buf.type_definition({ desc = "Type Definition" }))
+	bufmap("<leader>D", vim.lsp.buf.type_definition(), { desc = "Type Definition" })
 
 	bufmap("gr", require("telescope.builtin").lsp_references, { desc = "Search References" })
 	bufmap("<leader>s", require("telescope.builtin").lsp_document_symbols({ desc = "Search Document Symbols" }))
