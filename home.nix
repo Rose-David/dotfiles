@@ -34,7 +34,7 @@
       stylua
       rustfmt
       nixfmt
-      gdtoolkit
+      gdtoolkit_4
 
       xclip
       wl-clipboard
