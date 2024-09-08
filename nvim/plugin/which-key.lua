@@ -5,4 +5,13 @@ wk.add({
 	{ "<leader>h", group = "Git" },
 	{ "<leader>f", group = "Find" },
 	{ "<leader>l", group = "LaTeX" },
+	
+	{ "<leader>r", desc = "Rename Symbol" },
+	{ "<leader>a", desc = "Code Action" },
+	{ "gd", desc = "Go to Definition" },
+	{ "gD", desc = "Go to Declaration" },
+	{ "gI", desc = "Go to Implementation" },
+	{ "<leader>D", desc = "Type Definition" },
+	{ "<leader>s", desc = "Search Document Symbols" },
+	{ "<leader>S", desc = "Search Dynamic Workspace Symbols" }
 })
