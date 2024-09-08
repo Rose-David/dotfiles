@@ -12,6 +12,7 @@ wk.add({
 	{ "gd", desc = "Go to Definition" },
 	{ "gD", desc = "Go to Declaration" },
 	{ "gI", desc = "Go to Implementation" },
+	{ "gr", desc = "Go to Next Reference" },
 	{ "<leader>D", desc = "Type Definition" },
 	{ "<leader>s", desc = "Search Document Symbols" },
 	{ "<leader>S", desc = "Search Dynamic Workspace Symbols" }
