@@ -126,7 +126,6 @@
     blanket
     anki-bin
     prusa-slicer
-    vscode
     texliveMedium
     taskwarrior3
     rpi-imager
@@ -174,6 +173,7 @@
     # trenchbroom
 
     # programming:
+	vscode-fhs
     cargo
     rustc
     gcc
