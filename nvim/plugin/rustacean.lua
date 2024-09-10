@@ -35,5 +35,9 @@ vim.g.rustaceanvim = {
 		},
 	},
 	-- DAP configuration
-	dap = {},
+	dap = {
+		executable = {
+			command = "lldb-dap",
+		},
+	},
 }
