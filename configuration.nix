@@ -173,7 +173,8 @@
     # trenchbroom
 
     # programming:
-	vscode-fhs
+    vscode-fhs
+    vscode-extensions.vadimcn.vscode-lldb
     cargo
     rustc
     gcc
