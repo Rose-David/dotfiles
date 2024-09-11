@@ -165,6 +165,7 @@
     nxengine-evo
     ringracers
     srb2
+	gzdoom
     (discord.override { withVencord = true; })
 
     # gamedev:
