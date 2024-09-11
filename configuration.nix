@@ -166,6 +166,7 @@
     ringracers
     srb2
     gzdoom
+    dsda-doom
     doomrunner
     (discord.override { withVencord = true; })
 
