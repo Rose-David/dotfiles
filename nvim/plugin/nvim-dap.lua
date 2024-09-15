@@ -51,6 +51,7 @@ dap.configurations.cpp = {
 	},
 }
 dap.configurations.c = dap.configurations.cpp
+--[[
 dap.configurations.rust = {
 	{
 		name = "Launch",
@@ -85,6 +86,7 @@ dap.configurations.rust = {
 		-- ...,
 	},
 }
+--]]
 -- keybinds setup
 local map = vim.keymap.set
 
