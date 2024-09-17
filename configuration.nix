@@ -118,6 +118,7 @@
     blahaj
     lsd
     sl
+    bat
     tldr
     openssh
 
