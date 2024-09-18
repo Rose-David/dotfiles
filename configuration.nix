@@ -131,6 +131,7 @@
     taskwarrior3
     rpi-imager
     nmap
+    tigervnc
     zoom-us
 
     # customization:
