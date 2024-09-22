@@ -121,6 +121,7 @@
     bat
     tldr
     openssh
+    zellij
 
     # productivity:
     obsidian
