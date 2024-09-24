@@ -121,6 +121,7 @@
     bat
     tldr
     openssh
+    croc
     zellij
 
     # productivity:
