@@ -35,6 +35,7 @@
     enable = true;
     openFirewall = true;
     nssmdns4 = true;
+    publish = { enable = true; };
   };
 
   # Set your time zone.
