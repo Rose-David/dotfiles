@@ -45,6 +45,12 @@
     };
   };
 
+  services.openssh = {
+    enable = true;
+    openFirewall = true;
+    settings.DenyUsers = [ "root" ];
+  };
+
   # Set your time zone.
   time.timeZone = "America/New_York";
 
