@@ -35,7 +35,14 @@
     enable = true;
     openFirewall = true;
     nssmdns4 = true;
-    publish = { enable = true; };
+    publish = {
+      enable = true;
+      domain = true;
+      addresses = true;
+      workstation = true;
+      hinfo = true;
+      userServices = true;
+    };
   };
 
   # Set your time zone.
