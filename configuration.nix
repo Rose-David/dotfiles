@@ -205,7 +205,6 @@
     lldb
     python3
     ollama-rocm
-    alpaca
 
     # drone stuff:
     betaflight-configurator
