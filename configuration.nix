@@ -51,6 +51,10 @@
     settings.DenyUsers = [ "root" ];
   };
 
+  networking.interfaces.enp14s0.wakeOnLan = {
+    enable = true;
+    policy = [ "unicast" ];
+  };
   # Set your time zone.
   time.timeZone = "America/New_York";
 
