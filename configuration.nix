@@ -204,6 +204,7 @@
     clang-tools
     lldb
     python3
+    ollama
 
     # drone stuff:
     betaflight-configurator
