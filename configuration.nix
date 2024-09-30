@@ -53,7 +53,7 @@
 
   networking.interfaces.enp14s0.wakeOnLan = {
     enable = true;
-    policy = [ "unicast" ];
+    policy = [ "magic" ];
   };
   # Set your time zone.
   time.timeZone = "America/New_York";
