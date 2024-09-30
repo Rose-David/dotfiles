@@ -205,6 +205,8 @@
     lldb
     python3
     ollama-rocm
+    alpaca
+    kdePackages.alpaka
 
     # drone stuff:
     betaflight-configurator
