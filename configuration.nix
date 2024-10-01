@@ -261,11 +261,15 @@
       hyfetch = "hyfetch -b fastfetch";
     };
   };
+
+  environment.variables = { HSA_OVERRIDE_GFX_VERSION = "11.0.2"; };
+
   users.users.davidr.shell = pkgs.fish;
   programs.starship = {
     enable = true;
     presets = [ "gruvbox-rainbow" ];
   };
+
   programs.thefuck.enable = true;
 
   programs.neovim = {
