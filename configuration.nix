@@ -153,6 +153,7 @@
     nmap
     tigervnc
     zoom-us
+    geekbench
 
     # customization:
     fira-code-nerdfont
