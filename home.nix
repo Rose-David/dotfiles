@@ -127,11 +127,11 @@
         plugin = conform-nvim;
         config = toLuaFile ./nvim/plugin/conform.lua;
       }
-	  
-	  {
-		plugin = nvim-autopairs;
-		config = toLua "require("nvim-autopairs").setup()"
-	  }
+
+      {
+        plugin = nvim-autopairs;
+        config = toLua "require('nvim-autopairs').setup()";
+      }
 
       neodev-nvim
 
