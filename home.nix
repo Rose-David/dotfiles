@@ -130,6 +130,8 @@
 
       neodev-nvim
 
+      todo-comments-nvim
+
       presence-nvim
 
       vimtex
