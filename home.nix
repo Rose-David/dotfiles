@@ -143,6 +143,8 @@
           p.tree-sitter-python
           p.tree-sitter-json
           p.tree-sitter-rust
+          p.tree-sitter-gdscript
+          p.tree-sitter-godot-resource
           # LaTeX is covered by VimTeX
         ]));
         config = toLuaFile ./nvim/plugin/treesitter.lua;
