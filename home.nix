@@ -70,6 +70,8 @@
         config = toLuaFile ./nvim/plugin/telescope.lua;
       }
 
+      telescope-ui-select-nvim
+
       telescope-fzf-native-nvim
 
       {
