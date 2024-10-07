@@ -225,7 +225,7 @@
     inkscape
     obs-studio
     blender-hip
-    freecad-wayland
+    freecad
 
     # files:
     pika-backup
