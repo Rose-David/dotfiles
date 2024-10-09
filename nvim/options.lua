@@ -39,7 +39,7 @@ vim.keymap.set({ "n", "t" }, "<C-t>", '<CMD>lua require("FTerm").toggle()<CR>', 
 vim.keymap.set("n", "<leader>td", "<CMD>Trouble diagnostics toggle<CR>", { desc = "Toggle Diagnostics" })
 vim.keymap.set("n", "<leader>ts", "<CMD>Trouble symbols toggle<CR>", { desc = "Toggle Symbols" })
 vim.keymap.set("n", "<leader>tq", "<CMD>Trouble quickfix toggle<CR>", { desc = "Toggle Quickfix" })
-vim.keymap.set("n", "<leader>tl", "<CMD>Trouble lsp toggle<CR>", { desc = "Toggle LSP info" })
+vim.keymap.set("n", "<leader>tl", "<CMD>Trouble lsp toggle win.position=right<CR>", { desc = "Toggle LSP info" })
 
 vim.o.clipboard = "unnamedplus"
 
