@@ -226,6 +226,7 @@
     obs-studio
     blender-hip
     freecad
+    vlc
 
     # files:
     pika-backup
