@@ -142,6 +142,8 @@
 
       FTerm-nvim
 
+      trouble-nvim
+
       neodev-nvim
 
       todo-comments-nvim
