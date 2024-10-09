@@ -147,6 +147,11 @@
         config = toLua "require('trouble').setup()";
       }
 
+      {
+        plugin = guess-indent-nvim;
+        config = toLua "require('guess-indent).setup()";
+      }
+
       neodev-nvim
 
       todo-comments-nvim
