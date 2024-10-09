@@ -142,10 +142,10 @@
 
       FTerm-nvim
 
-	  {
-		plugin = trouble-nvim;
-		config = toLua "require('trouble').setup()"
-	  }
+      {
+        plugin = trouble-nvim;
+        config = toLua "require('trouble').setup()";
+      }
 
       neodev-nvim
 
