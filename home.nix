@@ -135,6 +135,11 @@
         config = toLua "require('nvim-autopairs').setup()";
       }
 
+      {
+        plugin = lsp_signature-nvim;
+        config = toLua "require('lsp_signature').setup()";
+      }
+
       neodev-nvim
 
       todo-comments-nvim
