@@ -34,7 +34,7 @@ vim.api.nvim_create_user_command("Format", function()
 	require("conform").format()
 end, {})
 -- FTerm
-vim.keymap.set("n", "<leader>t", '<CMD>lua require("FTerm").toggle()<CR>', { desc = "Toggle Terminal" })
+vim.keymap.set({ "n", "t" }, "<C-t>", '<CMD>lua require("FTerm").toggle()<CR>', { desc = "Toggle Terminal" })
 
 vim.o.clipboard = "unnamedplus"
 
