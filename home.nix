@@ -140,6 +140,8 @@
         config = toLua "require('lsp_signature').setup()";
       }
 
+      FTerm-nvim
+
       neodev-nvim
 
       todo-comments-nvim

@@ -33,6 +33,8 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find Help Tags" }
 vim.api.nvim_create_user_command("Format", function()
 	require("conform").format()
 end, {})
+-- FTerm
+vim.keymap.set("n", "<leader>t", '<CMD>lua require("FTerm").toggle()', { desc = "Toggle Terminal" })
 
 vim.o.clipboard = "unnamedplus"
 
