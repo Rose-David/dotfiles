@@ -149,7 +149,7 @@
 
       {
         plugin = guess-indent-nvim;
-        config = toLua "require('guess-indent).setup()";
+        config = toLua "require('guess-indent').setup()";
       }
 
       neodev-nvim
