@@ -40,6 +40,8 @@ vim.keymap.set("n", "<leader>td", "<CMD>Trouble diagnostics toggle<CR>", { desc 
 vim.keymap.set("n", "<leader>ts", "<CMD>Trouble symbols toggle<CR>", { desc = "Toggle Symbols" })
 vim.keymap.set("n", "<leader>tq", "<CMD>Trouble quickfix toggle<CR>", { desc = "Toggle Quickfix" })
 vim.keymap.set("n", "<leader>tl", "<CMD>Trouble lsp toggle win.position=right<CR>", { desc = "Toggle LSP info" })
+-- Trouble and Todo-comments
+vim.keymap.set("n", "<leader>tt", "<CMD>Trouble todo toggle<CR>", { desc = "Toggle TODOs" })
 
 vim.o.clipboard = "unnamedplus"
 

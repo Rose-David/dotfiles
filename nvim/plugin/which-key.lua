@@ -6,7 +6,7 @@ wk.add({
 	{ "<leader>ht", group = "Toggle" },
 	{ "<leader>f", group = "Find" },
 	{ "<leader>l", group = "LaTeX" },
-	
+
 	{ "<leader>r", desc = "Rename Symbol" },
 	{ "<leader>a", desc = "Code Action" },
 	{ "gd", desc = "Go to Definition" },
@@ -15,5 +15,6 @@ wk.add({
 	{ "gr", desc = "Go to Next Reference" },
 	{ "<leader>D", desc = "Type Definition" },
 	{ "<leader>s", desc = "Search Document Symbols" },
-	{ "<leader>S", desc = "Search Dynamic Workspace Symbols" }
+	{ "<leader>S", desc = "Search Dynamic Workspace Symbols" },
+	{ "<leader>t", desc = "Trouble" },
 })
