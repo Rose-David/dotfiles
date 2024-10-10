@@ -42,6 +42,9 @@ vim.keymap.set("n", "<leader>tq", "<CMD>Trouble quickfix toggle<CR>", { desc = "
 vim.keymap.set("n", "<leader>tl", "<CMD>Trouble lsp toggle win.position=right<CR>", { desc = "Toggle LSP info" })
 -- Trouble and Todo-comments
 vim.keymap.set("n", "<leader>tt", "<CMD>Trouble todo toggle<CR>", { desc = "Toggle TODOs" })
+-- Todo-comments
+vim.keymap.set("n", "]t", require("todo-comments").jump_next(), { desc = "Next TODO" })
+vim.keymap.set("n", "[t", require("todo-comments").jump_prev(), { desc = "Previous TODO" })
 
 vim.o.clipboard = "unnamedplus"
 
