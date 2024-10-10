@@ -1,6 +1,7 @@
 local wk = require("which-key")
 wk.add({
-	{ "<leader>c", group = "Cargo" },
+	{ "<leader>c", group = "Comment" },
+	{ "<leader>C", group = "Cargo" },
 	{ "<leader>d", group = "Debugger" },
 	{ "<leader>h", group = "Git" },
 	{ "<leader>ht", group = "Toggle" },

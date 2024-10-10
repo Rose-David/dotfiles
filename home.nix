@@ -159,6 +159,11 @@
         config = toLua "require('todo-comments').setup()";
       }
 
+      {
+        plugin = comment-nvim;
+        config = toLuaFile ./nvim/plugin/comment.lua;
+      }
+
       presence-nvim
 
       vimtex
