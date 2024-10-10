@@ -171,6 +171,11 @@
         '' + toLuaFile ./nvim/plugin/bufferline.lua;
       }
 
+      {
+        plugin = nvim-lightbulb;
+        config = toLuaFile ./nvim/plugin/lightbulb.lua;
+      }
+
       presence-nvim
 
       vimtex
