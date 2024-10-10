@@ -168,7 +168,7 @@
         plugin = bufferline-nvim;
         config = ''
           set termguicolors
-        '' + toLua "require('bufferline').setup()";
+        '' + toLuaFile ./nvim/plugin/bufferline.lua;
       }
 
       presence-nvim
