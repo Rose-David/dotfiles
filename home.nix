@@ -154,7 +154,10 @@
 
       neodev-nvim
 
-      todo-comments-nvim
+      {
+        plugin = todo-comments-nvim;
+        config = toLua "require('todo-comments).setup()";
+      }
 
       presence-nvim
 
