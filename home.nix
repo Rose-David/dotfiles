@@ -178,6 +178,11 @@
 
       vim-illuminate
 
+      {
+        plugin = project-nvim;
+        config = toLua "require('project_nvim').setup()";
+      }
+
       presence-nvim
 
       vimtex
