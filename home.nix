@@ -176,6 +176,8 @@
         config = toLuaFile ./nvim/plugin/lightbulb.lua;
       }
 
+      vim-illuminate
+
       presence-nvim
 
       vimtex
