@@ -46,6 +46,8 @@
       wl-clipboard
 
       ripgrep
+
+      sshfs
     ];
 
     plugins = with pkgs.vimPlugins; [
