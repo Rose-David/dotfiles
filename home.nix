@@ -194,6 +194,11 @@
         config = toLua "require('project_nvim').setup()";
       }
 
+      {
+        plugin = remote-sshfs-nvim;
+	config = toLua "require('remote-sshfs').setup()";
+      }
+
       presence-nvim
 
       vimtex
