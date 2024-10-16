@@ -22,6 +22,17 @@
       ${builtins.readFile file}
       EOF
     '';
+    remote-sshfs-nvim = buildVimPlugin {
+      name = "remote-sshfs.nvim";
+      version = "2024-08-29";
+      src = fetchFromGitHub {
+        owner = "nosduco";
+        repo = "remote-sshfs.nvim";
+        rev = "03f6c40c4032eeb1ab91368e06db9c3f3a97a75d";
+        sha256 = "1pl08cpgx27mhmbjxlqld4n2728hxs0hvwyjjy982k315hhhhldw";
+      };
+      meta.homepage = "https://github.com/nosduco/remote-sshfs.nvim/";
+    };
   in {
     enable = true;
     defaultEditor = true;
