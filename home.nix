@@ -22,7 +22,7 @@
       ${builtins.readFile file}
       EOF
     '';
-    remote-sshfs-nvim = buildVimPlugin {
+    remote-sshfs-nvim = pkgs.vimUtils.buildVimPlugin {
       name = "remote-sshfs.nvim";
       version = "2024-08-29";
       src = fetchFromGitHub {
