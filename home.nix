@@ -196,7 +196,14 @@
 
       {
         plugin = remote-sshfs-nvim;
-        config = toLua "require('remote-sshfs').setup({})";
+        config = toLua ''
+          require('remote-sshfs').setup({
+                    connections = {
+                      ssh_configs = {
+                        vim.fn.expand "$HOME" .. "/.ssh/config"
+                      }
+                    }
+                  })'';
       }
 
       presence-nvim
