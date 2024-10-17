@@ -38,7 +38,7 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find Help Tags" }
 local connections = require("remote-sshfs.connections")
 vim.keymap.set('n', "<leader>ff", function()
 	if connections.is_connected then
-		api.find_files()
+		api.find_files({})
 	else
 		builtin.find_files()
 	end
