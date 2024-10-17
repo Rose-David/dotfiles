@@ -196,7 +196,7 @@
 
       {
         plugin = remote-sshfs-nvim;
-	config = toLua "require('remote-sshfs').setup()";
+        config = toLua "require('remote-sshfs').setup({})";
       }
 
       presence-nvim
