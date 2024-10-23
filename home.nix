@@ -44,6 +44,8 @@
 
       rust-analyzer
 
+      nixd
+
       lldb
 
       stylua

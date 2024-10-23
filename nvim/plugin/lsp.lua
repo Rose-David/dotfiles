@@ -43,12 +43,24 @@ require("lspconfig").lua_ls.setup({
 	},
 })
 
---[[
-require('lspconfig').rnix.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
---]]
+require("lspconfig").nixd.setup({
+	cmd = { "nixd" },
+	settings = {
+		nixd = {
+			nixpkgs = {
+				expr = "import <nixpkgs> { }",
+			},
+			formatting = {
+				command = { "nixfmt" },
+			},
+			options = {
+				nixos = {
+					expr = '(builtins.getFlake "/etc/nixos").nixosConfigurations.nixos-desktop.options',
+				},
+			},
+		},
+	},
+})
 
 --[[
 require('lspconfig').rust_analyzer.setup{
