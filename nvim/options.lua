@@ -30,26 +30,28 @@ vim.keymap.set('n', "<leader>rd", api.disconnect, { desc = "Disconnect from Remo
 vim.keymap.set('n', "<leader>re", api.edit, { desc = "Remote Edit" })
 -- Telescope
 local builtin = require("telescope.builtin")
--- vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find Files" })
--- vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find Files" })
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find Help Tags" })
 -- Telescope and remote-sshfs
 local connections = require("remote-sshfs.connections")
-vim.keymap.set('n', "<leader>ff", function()
-	if connections.is_connected then
-		api.find_files({})
-	else
-		builtin.find_files()
-	end
-end, { desc = "Find Files" })
-vim.keymap.set('n', "<leader>fg", function()
-	if connections.is_connected then
-		api.live_grep({})
-	else
-		builtin.live_grep()
-	end
-end, { desc = "Live Grep" })
+-- vim.keymap.set('n', "<leader>ff", function()
+-- 	if connections.is_connected then
+-- 		api.find_files({})
+-- 	else
+-- 		builtin.find_files()
+-- 	end
+-- end, { desc = "Find Files" })
+-- vim.keymap.set('n', "<leader>fg", function()
+-- 	if connections.is_connected then
+-- 		api.live_grep({})
+-- 	else
+-- 		builtin.live_grep()
+-- 	end
+-- end, { desc = "Live Grep" })
+vim.keymap.set('n', "<leader>rff", api.find_files, { desc = "Remote Find Files" })
+vim.keymap.set('n', "<leader>rfg", api.live_grep, { desc = "Remote Live Grep" })
 -- Telescope and Project
 vim.keymap.set("n", "<leader>fp", function()
 	require("telescope").extensions.projects.projects({})
