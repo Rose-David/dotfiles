@@ -185,7 +185,7 @@
     mangohud
     protonup-qt
     sidequest
-    retroarchFull
+    # retroarchFull
     osu-lazer-bin
     xivlauncher
     nxengine-evo
