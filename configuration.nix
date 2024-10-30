@@ -166,7 +166,7 @@
     # music:
     ardour
     vital
-    tunefish
+    # tunefish
     surge-XT
     sunvox
     milkytracker
