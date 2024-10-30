@@ -7,7 +7,7 @@ wk.add({
 	{ "<leader>ht", group = "Toggle" },
 	{ "<leader>f", group = "Find" },
 	{ "<leader>l", group = "LaTeX" },
-	{ "<leader>r", group = "Remote" },
+	-- { "<leader>r", group = "Remote" },
 	{ "<leader>i", group = "LSP" },
 	-- { "<leader>r", desc = "Rename Symbol" },
 	-- { "<leader>a", desc = "Code Action" },
