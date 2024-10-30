@@ -24,10 +24,10 @@ vim.keymap.set("n", "<Leader>dr", "<cmd>lua require('dap').run_last()<CR>", { de
 vim.keymap.set("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
 vim.keymap.set("n", "<Leader>Cr", "<cmd>lua vim.cmd('RustLsp run')<CR>", { desc = "Cargo run" })
 -- remote-sshfs
-local api = require('remote-sshfs.api')
-vim.keymap.set('n', "<leader>rc", api.connect, { desc = "Connect to Remote" })
-vim.keymap.set('n', "<leader>rd", api.disconnect, { desc = "Disconnect from Remote" })
-vim.keymap.set('n', "<leader>re", api.edit, { desc = "Remote Edit" })
+-- local api = require('remote-sshfs.api')
+-- vim.keymap.set('n', "<leader>rc", api.connect, { desc = "Connect to Remote" })
+-- vim.keymap.set('n', "<leader>rd", api.disconnect, { desc = "Disconnect from Remote" })
+-- vim.keymap.set('n', "<leader>re", api.edit, { desc = "Remote Edit" })
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find Files" })
