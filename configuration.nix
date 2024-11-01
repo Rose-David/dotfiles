@@ -236,6 +236,8 @@
     kdePackages.partitionmanager
     kdePackages.kalk
     kdePackages.kwidgetsaddons
+    kdePackages.kcolorpicker
+    kdePackages.kcolorchooser
 
     # libraries:
     spacenavd
