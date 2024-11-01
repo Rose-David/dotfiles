@@ -194,6 +194,7 @@
     gzdoom
     dsda-doom
     doomrunner
+    bottles
     (discord.override { withVencord = true; })
 
     # gamedev:
@@ -236,8 +237,6 @@
     kdePackages.partitionmanager
     kdePackages.kalk
     kdePackages.kwidgetsaddons
-    kdePackages.kcolorpicker
-    kdePackages.kcolorchooser
 
     # libraries:
     spacenavd
