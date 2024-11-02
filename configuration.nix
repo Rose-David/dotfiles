@@ -194,7 +194,7 @@
     gzdoom
     dsda-doom
     doomrunner
-    bottles
+    lutris
     (discord.override { withVencord = true; })
 
     # gamedev:
