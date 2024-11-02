@@ -194,7 +194,6 @@
     gzdoom
     dsda-doom
     doomrunner
-    lutris
     (discord.override { withVencord = true; })
 
     # gamedev:
