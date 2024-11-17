@@ -194,6 +194,7 @@
     gzdoom
     dsda-doom
     doomrunner
+    itch
     (discord.override { withVencord = true; })
 
     # gamedev:
