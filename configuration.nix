@@ -159,7 +159,7 @@
     geekbench
 
     # customization:
-    fira-code-nerdfont
+    nerd-fonts.fira-code
     kde-gruvbox
     protonvpn-gui
 
