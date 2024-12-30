@@ -144,6 +144,7 @@
     openssh
     croc
     zellij
+    blisp
 
     # productivity:
     obsidian
