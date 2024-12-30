@@ -127,6 +127,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  fonts.packages = with pkgs; [
+    nerdfonts.fira-code
+    nerdfonts._3270
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -160,7 +165,6 @@
     geekbench
 
     # customization:
-    nerd-fonts.fira-code
     kde-gruvbox
     protonvpn-gui
 
