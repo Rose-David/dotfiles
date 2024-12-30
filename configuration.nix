@@ -128,8 +128,8 @@
   nixpkgs.config.allowUnfree = true;
 
   fonts.packages = with pkgs; [
-    nerdfonts.fira-code
-    nerdfonts._3270
+    nerd-fonts.fira-code
+    nerd-fonts._3270
   ];
 
   # List packages installed in system profile. To search, run:
