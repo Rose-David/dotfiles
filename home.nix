@@ -22,15 +22,6 @@
       ${builtins.readFile file}
       EOF
     '';
-    # remote-sshfs-nvim = pkgs.vimUtils.buildVimPlugin {
-    #   name = "remote-sshfs.nvim";
-    #   src = pkgs.fetchFromGitHub {
-    #     owner = "nosduco";
-    #     repo = "remote-sshfs.nvim";
-    #     rev = "03f6c40c4032eeb1ab91368e06db9c3f3a97a75d";
-    #     sha256 = "1pl08cpgx27mhmbjxlqld4n2728hxs0hvwyjjy982k315hhhhldw";
-    #   };
-    # };
   in {
     enable = true;
     defaultEditor = true;
@@ -57,8 +48,6 @@
       wl-clipboard
 
       ripgrep
-
-      sshfs
     ];
 
     plugins = with pkgs.vimPlugins; [
@@ -193,18 +182,6 @@
         plugin = project-nvim;
         config = toLua "require('project_nvim').setup()";
       }
-
-      # {
-      #   plugin = remote-sshfs-nvim;
-      #   config = toLua ''
-      #     require('remote-sshfs').setup({
-      #               connections = {
-      #                 ssh_configs = {
-      #                   vim.fn.expand "$HOME" .. "/.ssh/config"
-      #                 }
-      #               }
-      #             })'';
-      # }
 
       presence-nvim
 
