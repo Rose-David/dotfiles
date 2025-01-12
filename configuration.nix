@@ -141,6 +141,7 @@
     hyfetch
     fastfetch
     btop
+    rocmPackages.rocm-smi
     blahaj
     lsd
     sl
