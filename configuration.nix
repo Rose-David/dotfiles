@@ -140,8 +140,7 @@
     curl
     hyfetch
     fastfetch
-    btop
-    rocmPackages.rocm-smi
+    btop-rocm
     blahaj
     lsd
     sl
