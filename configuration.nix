@@ -169,7 +169,7 @@
     protonvpn-gui
 
     # music:
-    ardour
+    # ardour
     vital
     # tunefish
     surge-XT
