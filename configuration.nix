@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ lib, config, pkgs, inputs, ... }:
 
 {
   imports = [ # Include the results of the hardware scan.
@@ -275,7 +275,7 @@
 
   environment.variables = let
     makePluginPath = format:
-      (makeSearchPath format [
+      (lib.makeSearchPath format [
         "$HOME/.nix-profile/lib"
         "/run/current-system/sw/lib"
         "/etc/profiles/per-user/$USER/lib"
