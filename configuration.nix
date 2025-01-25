@@ -273,7 +273,26 @@
     };
   };
 
-  environment.variables = { HSA_OVERRIDE_GFX_VERSION = "11.0.2"; };
+  environment.variables = let
+    makePluginPath = format:
+      (makeSearchPath format [
+        "$HOME/.nix-profile/lib"
+        "/run/current-system/sw/lib"
+        "/etc/profiles/per-user/$USER/lib"
+      ])
+      + ":$HOME/.${format}";
+  in { 
+    # enable ROCm support on 7700XT, even though it's not officially supported
+    HSA_OVERRIDE_GFX_VERSION = "11.0.2";
+
+    # fixes audio plugin locations
+    DSSI_PATH = makePluginPath "dssi";
+    LADSPA_PATH = makePluginPath "ladspa";
+    LV2_PATH = makePluginPath "lv2";
+    LXVST_PATH = makePluginPath "lxvst";
+    VST_PATH = makePluginPath "vst";
+    VST3_PATH = makePluginPath "vst3";
+  };
 
   users.users.davidr.shell = pkgs.fish;
   programs.starship = {
