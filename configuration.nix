@@ -218,7 +218,7 @@
     clang-tools
     lldb
     python3
-    ollama-rocm
+    # ollama-rocm
 
     # drone stuff:
     betaflight-configurator
