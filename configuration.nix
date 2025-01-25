@@ -178,7 +178,7 @@
     odin2
     ninjas2
     helm
-    lmms
+    # lmms
     spotify
     # moar plugin packs:
     # distrho lsp-plugins
