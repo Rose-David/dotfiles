@@ -180,6 +180,7 @@
     helm
     # lmms
     spotify
+    openutau
     # moar plugin packs:
     # distrho lsp-plugins
 
