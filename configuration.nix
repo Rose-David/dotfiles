@@ -243,6 +243,8 @@
     kdePackages.partitionmanager
     kdePackages.kalk
     kdePackages.kwidgetsaddons
+    kdePackages.francis
+    kdePackages.kmines
 
     # libraries:
     spacenavd
