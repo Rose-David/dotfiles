@@ -181,6 +181,7 @@
     # lmms
     spotify
     openutau
+    famistudio
     # moar plugin packs:
     # distrho lsp-plugins
 
@@ -233,6 +234,7 @@
     obs-studio
     blender-hip
     freecad
+    openscad
     vlc
 
     # files:
