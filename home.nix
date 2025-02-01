@@ -115,10 +115,15 @@
         config = toLua "require('fidget').setup()";
       }
 
+      /*
       {
         plugin = barbecue-nvim;
         config = toLua "require('barbecue').setup()";
       }
+      */
+
+      dropbar-nvim
+
       {
         plugin = which-key-nvim;
         config = toLuaFile ./nvim/plugin/which-key.lua;
