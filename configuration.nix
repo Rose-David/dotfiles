@@ -127,10 +127,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.fira-code
-    nerd-fonts._3270
-  ];
+  fonts.packages = with pkgs; [ nerd-fonts.fira-code nerd-fonts._3270 ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -220,8 +217,10 @@
     clang-tools
     lldb
     python3
-    # ollama-rocm
-
+    alpaca.override
+    {
+      ollama = pkgs.ollama-rocm;
+    }
     # drone stuff:
     betaflight-configurator
     inav-configurator
@@ -284,9 +283,8 @@
         "$HOME/.nix-profile/lib"
         "/run/current-system/sw/lib"
         "/etc/profiles/per-user/$USER/lib"
-      ])
-      + ":$HOME/.${format}";
-  in { 
+      ]) + ":$HOME/.${format}";
+  in {
     # enable ROCm support on 7700XT, even though it's not officially supported
     HSA_OVERRIDE_GFX_VERSION = "11.0.2";
 
