@@ -217,10 +217,7 @@
     clang-tools
     lldb
     python3
-    alpaca.override
-    {
-      ollama = pkgs.ollama-rocm;
-    }
+    (alpaca.override { ollama = pkgs.ollama-rocm; })
     # drone stuff:
     betaflight-configurator
     inav-configurator
