@@ -188,6 +188,11 @@
         config = toLua "require('project_nvim').setup()";
       }
 
+      {
+        plugin = markdown-nvim;
+        config = toLua "require('markdown').setup({})";
+      }
+
       presence-nvim
 
       vimtex
