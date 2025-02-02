@@ -190,6 +190,8 @@
     protonup-qt
     sidequest
     # retroarchFull
+    fsuae-launcher
+    vice
     osu-lazer-bin
     xivlauncher
     nxengine-evo
