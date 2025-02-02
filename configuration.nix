@@ -218,6 +218,8 @@
     lldb
     python3
     (alpaca.override { ollama = pkgs.ollama-rocm; })
+    ollama-rocm
+
     # drone stuff:
     betaflight-configurator
     inav-configurator
