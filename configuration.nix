@@ -135,6 +135,7 @@
     # terminal:
     wget
     curl
+    gh
     hyfetch
     fastfetch
     btop-rocm
