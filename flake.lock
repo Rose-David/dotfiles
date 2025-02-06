@@ -36,10 +36,27 @@
         "type": "github"
       }
     },
+    "olympus-nixpkgs": {
+      "locked": {
+        "lastModified": 1735644231,
+        "narHash": "sha256-oouqvroxlP9AUFecx3e2zr46G6TZr4YtYmO5+Z7R4d8=",
+        "owner": "Petingoso",
+        "repo": "nixpkgs",
+        "rev": "f1088aea152b0a0b1a4478ddbab8918f05e52693",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Petingoso",
+        "ref": "olympus",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "olympus-nixpkgs": "olympus-nixpkgs"
       }
     }
   },

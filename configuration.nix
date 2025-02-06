@@ -203,6 +203,7 @@
     doomrunner
     itch
     (discord.override { withVencord = true; })
+    (inputs.olympus-nixpkgs.legacyPackages.${pkgs.system}.olympus.override { celesteWrapper = steam-run; })
 
     # gamedev:
     godot_4
