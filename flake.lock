@@ -56,7 +56,23 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "olympus-nixpkgs": "olympus-nixpkgs"
+        "olympus-nixpkgs": "olympus-nixpkgs",
+        "sgdboop-nixpkgs": "sgdboop-nixpkgs"
+      }
+    },
+    "sgdboop-nixpkgs": {
+      "locked": {
+        "lastModified": 1738981817,
+        "narHash": "sha256-oChkJQcITxtU5xjcgNQp5JGJM1mbuDlix01rAqSLEpE=",
+        "ref": "refs/heads/sgdboop",
+        "rev": "7891e4c9bfd2e2015c9599d60a1dac007f1a5267",
+        "revCount": 2,
+        "type": "git",
+        "url": "file:///home/davidr/Documents/nix_contribs/nixpkgs"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:///home/davidr/Documents/nix_contribs/nixpkgs"
       }
     }
   },
