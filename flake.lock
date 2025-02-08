@@ -64,15 +64,16 @@
       "locked": {
         "lastModified": 1738981817,
         "narHash": "sha256-oChkJQcITxtU5xjcgNQp5JGJM1mbuDlix01rAqSLEpE=",
-        "ref": "refs/heads/sgdboop",
+        "owner": "Rose-David",
+        "repo": "nixpkgs",
         "rev": "7891e4c9bfd2e2015c9599d60a1dac007f1a5267",
-        "revCount": 2,
-        "type": "git",
-        "url": "file:///home/davidr/Documents/nix_contribs/nixpkgs"
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "file:///home/davidr/Documents/nix_contribs/nixpkgs"
+        "owner": "Rose-David",
+        "ref": "sgdboop",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     }
   },
