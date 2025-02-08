@@ -204,6 +204,7 @@
     itch
     (discord.override { withVencord = true; })
     (inputs.olympus-nixpkgs.legacyPackages.${pkgs.system}.olympus.override { celesteWrapper = steam-run; })
+    (inputs.sgdboop-nixpkgs.legacyPackages.${pkgs.system}.sgdboop)
 
     # gamedev:
     godot_4

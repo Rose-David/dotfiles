@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     olympus-nixpkgs.url = "github:Petingoso/nixpkgs/olympus";
+    sgdboop-nixpkgs.url = "git+file:///home/davidr/Documents/nix_contribs/nixpkgs";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
